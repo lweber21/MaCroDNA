@@ -86,7 +86,7 @@ class MaCroDNA:
     def cell2cell_assignment(self):
         dna_cells = list(self.dna_df.columns)
         rna_cells = list(self.rna_df.columns)
-        genes = set(self.dna_df.index).intersection(self.rna_df.index.to_list())
+        genes = list(set(self.dna_df.index).intersection(self.rna_df.index.to_list()))
         self.dna_df = self.dna_df.loc[genes,:]
         self.rna_df = self.rna_df.loc[genes,:]
 
