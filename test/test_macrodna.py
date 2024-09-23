@@ -1,6 +1,4 @@
-import sys 
-sys.path.append("./src/MaCroDNA")
-from macrodna import MaCroDNA
+from MaCroDNA import MaCroDNA
 import pandas as pd
 
 if __name__ == '__main__':
